@@ -24,11 +24,12 @@ const ContactForm: React.FC = () => {
       setError("");
 
       await API.post("/contacts", {
-        name,
-        email,
-        phone,
-        message,
-      });
+      name,
+      email,
+      phone: phone.toString(),
+      message,
+});
+
 
       // Reset form
       setName("");
