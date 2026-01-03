@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://contact-management-app-gcpb.onrender.com",
+  baseURL: "https://contact-management-app-gcbp.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
