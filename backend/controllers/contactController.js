@@ -11,7 +11,7 @@ export const createContact = async (req, res) => {
 
 export const getContacts = async (req, res) => {
   try {
-    const contacts = (await Contact.find()).toSorted({ createdAt: -1 });
+    const contacts = await Contact.find().sort({ createdAt: -1 });
     res.json(contacts);
   } catch (error) {
     res.status(500).json({ message: error.message });
