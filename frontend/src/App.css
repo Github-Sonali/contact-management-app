@@ -1,0 +1,130 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+
+.app-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;  
+  align-items: center;       
+  background: linear-gradient(
+    135deg,
+    #d97706,   
+    #f59e0b,   
+    #92400e    
+  );
+}
+
+.app-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fffaf3;
+  border-radius: 22px;
+  padding: 26px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+.contact-form {
+  background: #fff7ed;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 28px;
+}
+
+.contact-form h2 {
+  margin: 0 0 14px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3a3a3a;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #d6a15c;
+  background: #fffdf9;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #d97706;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #f59e0b, #92400e);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.contact-list {
+  background: transparent;
+}
+
+.contact-list h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #3a3a3a;
+}
+
+.contact-card {
+  background: #ffedd5;
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.contact-card h4 {
+  margin: 0 0 6px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2a2a2a;
+}
+
+.contact-card p {
+  margin: 2px 0;
+  font-size: 13px;
+  color: #2f2f2f;
+}
