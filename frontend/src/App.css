@@ -63,7 +63,14 @@ h1 {
   border: 1px solid #d6a15c;
   background: #fffdf9;
   font-size: 14px;
+  color: #1f2937;   
 }
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9ca3af;
+}
+
 
 .contact-form textarea {
   resize: none;
